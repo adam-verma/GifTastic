@@ -4,7 +4,7 @@
   // displaygifInfo function re-renders the HTML to display the appropriate content
   function displaygifInfo() {
 
-    const topicName = $('#gif-input').val();
+    const topicName = $(this).attr("data-name");
     const queryURL =
       `http://api.giphy.com/v1/gifs/search?q=${topicName}&limit=10&api_key=wi2YX0JUhKqOOuIG5uYUovHcz02Z2nTA`;
     console.log(queryURL);
